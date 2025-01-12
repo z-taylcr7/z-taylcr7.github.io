@@ -1,0 +1,22 @@
+{
+  "name": "yichao_zhong_homepage",
+  "version": "1.0.0",
+  "description": "hp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z-taylcr7/yichao-zhong.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z-taylcr7/yichao-zhong.github.io/issues"
+  },
+  "homepage": "https://github.com/z-taylcr7/yichao-zhong.github.io#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
