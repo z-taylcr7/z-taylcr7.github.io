@@ -14,6 +14,5 @@ $(document).ready(function() {
 
         fillEmail('email-to-fill-0', emailsInfo['Yichao-Zhong-0']);
         fillEmail('email-to-fill-1', emailsInfo['Yichao-Zhong-1']);
-        fillEmail('email-to-fill-2', emailsInfo['Yichao-Zhong-2']);
     });
 });
