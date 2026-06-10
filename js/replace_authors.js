@@ -8,6 +8,7 @@ $(document).ready(function() {
         $('span.authors').each(function() {
             // Store the current span being processed
             const authorsSpan = $(this);
+            const authorOverrides = JSON.parse(authorsSpan.attr('data-author-links') || '{}');
 
             // Get the authors' text, split by commas, and trim extra spaces
             const authorsList = authorsSpan.html().split(',').map(author => author.trim());
@@ -23,16 +24,21 @@ $(document).ready(function() {
                 const asteriskIndex = author.indexOf('*');
                 const asterisk = asteriskIndex !== -1 ? author.slice(asteriskIndex) : '';
                 author = author.replace(/\*/g, '').trim();
+                const authorHomepage = authorOverrides[author] || authorHomepages[author];
 
                 // Check if the author exists in the JSON and create a link
-                if (author == 'Yichao Zhong') {
+                if (authorHomepage) {
+                    const authorLink = $('<a></a>').attr('href', authorHomepage).text(author);
+                    if (author == 'Yichao Zhong') {
+                        authorLink.html($('<b></b>').text(author));
+                    }
+                    authorsSpan.append(authorLink);
+                }
+                else if (author == 'Yichao Zhong') {
                     const authorBold = $('<b></b>').text(author);
                     authorsSpan.append(authorBold);
                 }
-                else if (authorHomepages[author]) {
-                    const authorLink = $('<a></a>').attr('href', authorHomepages[author]).text(author);
-                    authorsSpan.append(authorLink);
-                } else {
+                else {
                     // If the author is not in the JSON, just add the plain name
                     authorsSpan.append(author);
                 }
