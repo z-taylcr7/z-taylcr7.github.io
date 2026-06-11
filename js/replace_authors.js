@@ -12,7 +12,6 @@ $(document).ready(function() {
 
             // Get the authors' text, split by commas, and trim extra spaces
             const authorsList = authorsSpan.html().split(',').map(author => author.trim());
-            console.log(authorsList);
 
             // Clear the current span's content
             authorsSpan.html('');
@@ -26,20 +25,14 @@ $(document).ready(function() {
                 author = author.replace(/\*/g, '').trim();
                 const authorHomepage = authorOverrides[author] || authorHomepages[author];
 
-                // Check if the author exists in the JSON and create a link
-                if (authorHomepage) {
-                    const authorLink = $('<a></a>').attr('href', authorHomepage).text(author);
-                    if (author == 'Yichao Zhong') {
-                        authorLink.html($('<b></b>').text(author));
-                    }
-                    authorsSpan.append(authorLink);
+                // Own name: always bold, never linked
+                if (author === 'Yichao Zhong') {
+                    authorsSpan.append($('<b></b>').text(author));
                 }
-                else if (author == 'Yichao Zhong') {
-                    const authorBold = $('<b></b>').text(author);
-                    authorsSpan.append(authorBold);
+                else if (authorHomepage) {
+                    authorsSpan.append($('<a></a>').attr('href', authorHomepage).text(author));
                 }
                 else {
-                    // If the author is not in the JSON, just add the plain name
                     authorsSpan.append(author);
                 }
                 // Add the asterisk back to the author's name

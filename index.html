@@ -10,8 +10,9 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.6.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" type="text/css" />
         <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
@@ -25,31 +26,15 @@
         <meta name="twitter:description" content="Yichao Zhong's academic personal homepage." />
     </head>
 
-    <body id="page-top" style="color:#373440">
+    <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">
-                    Yichao Zhong
-                </span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/image/yichao_profile.jpg" alt="profile image" /></span>
+                <span>Yichao Zhong</span>
+                <span class="brand-divider d-none d-sm-inline">/</span>
+                <span class="brand-cn d-none d-sm-inline">钟逸超</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <!-- Basic Information -->
-            <div class="mb-4 d-none d-lg-block">
-                <b class="text-light">
-                    <span class="fs-5">Yichao Zhong</span>
-                    · 
-                    <span class="fs-5">钟逸超</span>
-                </b> 
-                <div>
-                    <!-- fill email links dynamically to prevent email harvesting by spambots -->
-                    <div id="email-to-fill-0" > 
-                    </div>
-                    <div id="email-to-fill-1">
-                    </div>
-                </div>
-            </div>
             <!-- Navigation Items -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
@@ -58,9 +43,9 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#miscellaneous">Miscellaneous</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#miscellaneous">Misc</a></li>
                 </ul>
             </div>
         </nav>
@@ -68,35 +53,35 @@
 
         <div class="container-fluid p-0">
             <!-- About-->
-            <div class="d-flex d-lg-none justify-content-center mt-4">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/image/yichao_profile.jpg" alt="profile image" />
-            </div>
-        
             <section class="resume-section" id="about">
-                <div class="resume-section-content mt-lg-5">
+                <div class="resume-section-content about-grid mt-lg-5">
+                    <div class="about-copy">
                     <!-- <div id="temp"></div> -->
-<p class="lead mb-4" id="about-content">
-    <div class="authors" style="color:rgb(135, 160, 234);">Ad astra abyssosque! <br> </div>
-I am currently a PhD student in Robotics at <a href="https://www.hku.hk/">HKU</a>, advised by Prof. <a href="https://lihongyang.info/">Hongyang Li</a> and Prof. <a href="https://sites.google.com/site/panjia/home">Jia Pan</a>.
-During my undergraduate years at <a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University (SJTU)</a>, 
-I have been fortunate to work and learn with <a href="https://wnzhang.net">Prof. Weinan Zhang</a> at SJTU and <a href="https://gshi.me">Prof. Guanya Shi</a> at <a href="https://cmu.edu">CMU</a>; and also honored to intern at <a href="https://shlab.org.cn/">Shanghai AI Lab</a> and <a href="https://en.horizon.auto/">Horizon Robotics</a>.<br>
+                    <div class="homepage-kicker">Ad astra abyssosque!</div>
+                    <h1 class="homepage-title">Yichao Zhong</h1>
+                    <p class="lead mb-4" id="about-content">
+I am a PhD student in Robotics at <a href="https://www.hku.hk/">HKU</a>, advised by Prof. <a href="https://lihongyang.info/">Hongyang Li</a> and Prof. <a href="https://sites.google.com/site/panjia/home">Jia Pan</a>.
+During my undergraduate years at <a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University</a>,
+I was fortunate to work with <a href="https://wnzhang.net">Prof. Weinan Zhang</a> at SJTU and <a href="https://gshi.me">Prof. Guanya Shi</a> at <a href="https://cmu.edu">CMU</a>, and honored to intern at <a href="https://shlab.org.cn/">Shanghai AI Lab</a> and <a href="https://en.horizon.auto/">Horizon Robotics</a>.<br><br>
 
-<!-- I'm a final-year undergraduate student from <a href="https://acm.sjtu.edu.cn/home">ACM Honor Class</a>, <a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University (SJTU)</a>.
-Previously, I was a visiting student at <a href="https://cmu.edu">Carnegie Mellon University</a> at <a href="https://lecar-lab.github.io/">LeCAR Lab</a>, adviced by Prof. <a href="https://gshi.me/">Guanya Shi</a>.
-Since Sept. 2023, I have been part of the <a href="https://apex.sjtu.edu.cn/">APEX Data & Knowledge Management Lab</a> at SJTU, advised by Prof. <a href="https://wnzhang.net/">Weinan Zhang</a> and Prof. <a href="https://apex.sjtu.edu.cn/members/yyu">Yong Yu</a>.<br> -->
-
-My research aims to excavate the potential of adaptivity and agility of humanoids.<br>
-Find more in my <a href="https://z-taylcr7.github.io/assets/file/CV-YichaoZhong.pdf">Curriculum Vitae</a>.<br>
-<!-- <div class="authors" style="color:rgb(87, 161, 231);">Safe and Smart, Robot's Art. <br>Adaptive and Strong, the Future We Belong. </div> -->
-
-</p>
-                    <div class="social-icons">
-                        <a class="social-icon" title="X / Twitter" href="https://x.com/PeterYChong"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a class="social-icon" title="Github" href="https://github.com/z-taylcr7"><i class="fa-brands fa-github"></i></a>
-                        <a class="social-icon" title="Google Scholar" href="https://scholar.google.com/citations?user=TEOnkScAAAAJ"><i class="fa-brands fa-google-scholar"></i></a>
-                        <a class="social-icon" title="Instagram" href="https://www.instagram.com/peterchong777/"><i class="fa-brands fa-instagram"></i></a>
-                        <!-- <a class="social-icon" title="Bilibili" href="https://space.bilibili.com/38874713"><i class="fa-brands fa-bilibili"></i></a> -->
-                        <a class="social-icon d-none" title="Resume" href="/assets/file/CV-YichaoZhong.pdf"><i class="fa-solid fa-file"></i></a>
+My research seeks to unlock the <em>adaptivity</em> and <em>agility</em> of humanoids &mdash; spanning adaptive and agile and robust locomotion, interaction and motion skills.
+Find more in my <a href="https://z-taylcr7.github.io/assets/file/CV-YichaoZhong.pdf">Curriculum Vitae</a>.
+                    </p>
+                    <div class="profile-links">
+                        <a class="profile-link profile-link-primary" href="mailto:peterzychhh@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a class="profile-link" href="/assets/file/CV-YichaoZhong.pdf"><i class="fa-solid fa-file-lines"></i> CV</a>
+                        <a class="profile-link" href="https://scholar.google.com/citations?user=TEOnkScAAAAJ"><i class="fa-brands fa-google-scholar"></i> Scholar</a>
+                        <a class="profile-link" href="https://github.com/z-taylcr7"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a class="profile-link" href="https://x.com/PeterYChong"><i class="fa-brands fa-x-twitter"></i> X</a>
+                        <a class="profile-link" href="https://www.instagram.com/peterchong777/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        <!-- <a class="profile-link" href="https://space.bilibili.com/38874713"><i class="fa-brands fa-bilibili"></i> Bilibili</a> -->
+                    </div>
+                    </div>
+                    <div class="about-portrait">
+                        <div class="img-profile-swap">
+                            <img class="img-fluid img-profile img-profile-front" src="assets/image/yichao.JPG" alt="Yichao Zhong portrait" />
+                            <img class="img-fluid img-profile img-profile-back" src="assets/image/tomori.PNG" alt="" aria-hidden="true" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -108,29 +93,29 @@ Find more in my <a href="https://z-taylcr7.github.io/assets/file/CV-YichaoZhong.
                     <h3 class="mb-2">News</h3>
                     <ul class="news-list">
                         <li class="news-list-item">
-                            <span class="news-list-date">2026/06</span>:
+                            <span class="news-list-date">2026/06</span>
                             <span class="news-list-content"> <i>RoboNaldo</i> is available on arXiv. </span>
                         </li>
                         <li class="news-list-item">
-                            <span class="news-list-date">2025/09</span>:
+                            <span class="news-list-date">2025/09</span>
                             <span class="news-list-content"> Started my PhD at HKU. </span>
                         </li>
 
                         <li class="news-list-item">
-                            <span class="news-list-date">2025/06</span>:
+                            <span class="news-list-date">2025/06</span>
                             <span class="news-list-content"> Finished my Graduate Thesis! I graduate from SJTU with a Bachelor of Engineering. </span>
                         </li>
                         <li class="news-list-item">
-                            <span class="news-list-date">2025/03</span>:
+                            <span class="news-list-date">2025/03</span>
                             <span class="news-list-content"> <i> Bridging Adaptivity and Safety </i> is accepted by L4DC 2025. See you in Michigan! </span>
                         </li>
                         <li class="news-list-item">
-                            <span class="news-list-date">2024/12</span>:
+                            <span class="news-list-date">2024/12</span>
                             <span class="news-list-content">One paper is submitted to L4DC 2025.</span>
                         </li>
                         <li class="news-list-item">
-                            <span class="news-list-date">2024/06</span>:
-                            <span class="news-list-content">I start my internship at <a href="https://lecar-lab.github.io/">LeCAR Lab</a> at CMU.
+                            <span class="news-list-date">2024/06</span>
+                            <span class="news-list-content">I start my internship at <a href="https://lecar-lab.github.io/">LeCAR Lab</a> at CMU.</span>
                         </li>
                     </ul>
                 </div>
@@ -455,7 +440,7 @@ Find more in my <a href="https://z-taylcr7.github.io/assets/file/CV-YichaoZhong.
                         <div class="edu-content col-12 col-md-8">
                             <h4 class="edu-title">
                                 APEX Data & Knowledge Management Lab, RL Group, SJTU
-                                <a href="https://https://apex.sjtu.edu.cn/">
+                                <a href="https://apex.sjtu.edu.cn/">
                                     <span><i class="fa-solid fa-arrow-up-right-from-square small"></i></span>
                                 </a>
                             </h4>
@@ -476,19 +461,19 @@ Find more in my <a href="https://z-taylcr7.github.io/assets/file/CV-YichaoZhong.
                     <h3 class="mb-2">Honors & Awards</h3>
                     <ul>
                         <li>
-                            <span class="news-list-date">2022/12</span>:
+                            <span class="news-list-date">2022/12</span>
                             <span class="news-list-content">Longfor Scholarship (top 10% in ACM Honor Class)</span>
                         </li>
                         <li>
-                            <span class="news-list-date">2022/02</span>:
+                            <span class="news-list-date">2022/02</span>
                             <span class="news-list-content">Honorable Mention, the 2022 COMAP Mathematical Contest in Modeling(MCM)</span>
                         </li>
                         <li>
-                            <span class="news-list-date">2021/12, 2022/12. 2023/12, 2024/12</span>:
+                            <span class="news-list-date">2021/12, 2022/12. 2023/12, 2024/12</span>
                             <span class="news-list-content">Zhiyuan Honor Scholarship (top 2% in SJTU)</span>
                         </li>
                         <!-- <li>
-                            <span class="news-list-date">2021/11</span>:
+                            <span class="news-list-date">2021/11</span>
                             <span class="news-list-content">Silver Medal, the 2021 China Collegiate Programming Contest, Guangzhou Site</span>
                         </li> -->
                     </ul>
@@ -527,7 +512,7 @@ Find more in my <a href="https://z-taylcr7.github.io/assets/file/CV-YichaoZhong.
             <!-- Copyright -->
             <div class="text-center p-3 bg-light">
                 <p>
-                Last update: <span class="news-list-date">2024/11</span>. <br>
+                Last update: <span class="news-list-date">2026/06</span>. <br>
                 Powered by Bootstrap & jQuery, maintained by Yichao Zhong.
                 </p>
             </div>
@@ -540,7 +525,6 @@ Find more in my <a href="https://z-taylcr7.github.io/assets/file/CV-YichaoZhong.
         <script src="js/scripts.js"></script>
         <script src="js/replace_authors.js"></script>
         <script src="js/fill_emails.js"></script>
-        <script src="js/update_cards.js"></script> 
-        <script src="js/server.js"></script> 
+        <script src="js/update_cards.js"></script>
     </body>
 </html>
